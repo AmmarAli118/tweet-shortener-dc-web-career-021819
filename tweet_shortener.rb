@@ -30,7 +30,7 @@ def bulk_tweet_shortener(tweet)
   # tweet = array of arrays
   # single array = array of array's first one. 
   
-  puts word_substituter(tweet)
+  puts word_substituter(tweet.flatten)
 end
 
 def selective_tweet_shortener(tweet)
