@@ -11,6 +11,13 @@ def dictionary (word)
   "at" => "@",
   "and" => "&"
   }
+  
+  dictionary.each do |key, value|
+          if key == word
+            word = value
+          end
+      end
+  return word
 end 
 
 def word_substituter (tweet_string)
@@ -19,10 +26,7 @@ def word_substituter (tweet_string)
   tweet_array = tweet_string.split(" ")
   
   tweet_array.map do |word|
-      dictionary.map do |key, value|
-          if key == word
-            word = value
-          end
+        dictionary(word)
       end
   end
   
