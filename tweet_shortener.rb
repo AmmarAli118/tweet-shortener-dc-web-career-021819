@@ -23,7 +23,10 @@ def word_substituter (tweet_string)
   
   tweet_array.map do |word|
       if 
-        word = dictionary[word]
+        word = dictionary[word.downcase]
+      else
+        word
+      end 
   end
   
   tweet_array.join(" ")
