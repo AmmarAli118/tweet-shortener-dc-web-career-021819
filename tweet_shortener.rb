@@ -27,7 +27,6 @@ def word_substituter (tweet_string)
   
   tweet_array.map do |word|
         dictionary(word)
-      end
   end
   
   tweet_array.join(" ")
