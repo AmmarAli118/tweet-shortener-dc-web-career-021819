@@ -17,6 +17,7 @@ def dictionary
 end 
 
 def word_substituter(tweet)
+  #tweet is a string that we split(convert) into an array then join(revert) into a string again
   tweet.split().map do |word|
     if dictionary.keys.include?(word.downcase)
       word = dictionary[word.downcase]
@@ -29,8 +30,10 @@ end
 def bulk_tweet_shortener(tweet)
   # tweet = array of arrays
   # single array = array of array's first one. 
-  
-  puts word_substituter(tweet.flatten)
+  tweet.each do |array|
+    string = array.flatten
+    puts word_substituter(string)
+  end
 end
 
 def selective_tweet_shortener(tweet)
