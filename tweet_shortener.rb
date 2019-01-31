@@ -1,8 +1,7 @@
 # Write your code here.
   
   
-def dictionary (word)
-  
+def dictionary
   dictionary = {
   "hello" =>"hi",
   "to" => '2', 
