@@ -15,13 +15,6 @@ def dictionary (word)
   "at" => "@",
   "and" => "&"
   }
-  
-  dictionary.each do |key, value|
-          if key == word
-            word = value
-            return word
-          end
-      end
 end 
 
 def word_substituter (tweet_string)
