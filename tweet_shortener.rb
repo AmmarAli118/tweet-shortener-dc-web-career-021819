@@ -16,17 +16,12 @@ def dictionary
   }
 end 
 
-def word_substituter (tweet_string)
-  
-  tweet_array = tweet_string.split(" ")
-  
-  tweet_array.map do |word|
-      if dictionary.keys.include?(word.downcase)
-        word = dictionary[word.downcase]
-      else
-        word
-      end 
-  end
-  
-  tweet_array.join(" ")
+def word_substituter(tweet)
+  tweet.split.collect do |word|
+    if dictionary.keys.include?(word.downcase)
+      word = dictionary[word.downcase]
+    else
+      word
+    end
+  end.join(" ")
 end
