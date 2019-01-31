@@ -26,11 +26,11 @@ def word_substituter(tweet)
   end.join(" ")
 end
 
-def bulk_tweet_shortner(tweet)
+def bulk_tweet_shortener(tweet)
   puts word_substituter(tweet)
 end
 
-def selective_tweet_shortner(tweet)
+def selective_tweet_shortener(tweet)
 end
 
 def shortened_tweet_truncator (tweet)
