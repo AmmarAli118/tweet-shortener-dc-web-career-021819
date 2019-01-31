@@ -25,3 +25,13 @@ def word_substituter(tweet)
     end
   end.join(" ")
 end
+
+def bulk_tweet_shortner(tweet)
+  
+end
+
+def selective_tweet_shortner(tweet)
+end
+
+def shortened_tweet_truncator (tweet)
+end
