@@ -27,6 +27,9 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(tweet)
+  # tweet = array of arrays
+  # single array = array of array's first one. 
+  
   puts word_substituter(tweet)
 end
 
