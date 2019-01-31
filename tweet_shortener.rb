@@ -22,9 +22,10 @@ def dictionary (word)
 end 
 
 def word_substituter (tweet_string)
-
   
   tweet_array = tweet_string.split(" ")
+  
+  binding.pry 
   
   tweet_array.map do |word|
         word = dictionary(word)
