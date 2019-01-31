@@ -2,6 +2,7 @@
   
   
 def dictionary (word)
+  
   dictionary = {
   "hello" =>"hi",
   "to, two, too" => '2',
@@ -15,9 +16,9 @@ def dictionary (word)
   dictionary.each do |key, value|
           if key == word
             word = value
+            return word
           end
       end
-  return word
 end 
 
 def word_substituter (tweet_string)
