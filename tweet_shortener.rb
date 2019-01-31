@@ -22,7 +22,7 @@ def word_substituter (tweet_string)
   tweet_array = tweet_string.split(" ")
   
   tweet_array.map do |word|
-      if dictionary.keys.include? word.downcase
+      if dictionary.keys.include? (word.downcase)
         word = dictionary[word.downcase]
       else
         word
